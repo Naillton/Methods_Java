@@ -11,6 +11,8 @@ public class Main {
         Scanner secondNumber = new Scanner(System.in);
         double sNumber;
 
+        String nome = myName();
+        System.out.println("ola " + nome + " seja bem vindo");
         System.out.println("Informe o primeiro numero : ");
         fNumber = Double.parseDouble(firstNumber.nextLine());
         System.out.println("Informe o segundo numero : ");
@@ -40,5 +42,13 @@ public class Main {
         } else {
             System.out.println("Boa Noite");
         }
+    }
+
+    public static  String myName() {
+        Scanner name = new Scanner(System.in);
+        String nome;
+        System.out.println("Informe o seu nome : ");
+        nome = name.nextLine();
+        return nome;
     }
 }
